@@ -331,5 +331,57 @@ h5 {
   .how-better h2 {
     grid-row: 1 / span 2;
   }
-  
+  .images {
+    display: grid;
+    grid-template-areas: 
+    'sunset sunset ice-cream'
+    'tape books ice-cream'
+    'tape street street';
+    gap: 20px;
+    padding-top: 11px;
+    margin-bottom: 60px;
+  }
+  .sunset-image {
+    grid-area: sunset;
+  }
+  .ice-cream-image {
+    grid-area: ice-cream;
+    block-size: 100%;
+  }
+  .tape-image {
+    grid-area: tape;
+    block-size: 100%;
+  }
+  .books-image {
+    grid-area: books;
+  }
+  .street-image {
+    grid-area: street;
+  }
+  h5 {
+    margin-top: 463px;
+    margin-bottom: 462px;
+  }
+
+  footer::before {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-top: solid 1px var(--accent-color);
+    border-right: solid 1px var(--accent-color);
+    position: absolute;
+    right: 20px;
+    margin-top: 20px;
+  }
+
+  footer::after {
+    content: "";
+    width: 25px;
+    height: 25px;
+    border-bottom: solid 1px var(--accent-color);
+    border-left: solid 1px var(--accent-color);
+    position: absolute;
+    left: 20px;
+    margin-top: 835px;
+  }
 }
