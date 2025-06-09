@@ -1,15 +1,8 @@
-/* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
-
 .page {
   background-image: var(--background-photo);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
-  /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
-}
-
-h2 {
-  color: var(--heading-color);
 }
 
 .header {
@@ -30,7 +23,7 @@ h2 {
 }
 
 h3 {
-  font-family: IBM Plex Mono;
+  font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
@@ -210,6 +203,7 @@ h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
+  color: var(--heading-color);
 }
 
 article {
@@ -244,7 +238,6 @@ h5 {
 
 @media (min-width: 768px) {
   .main__name {
-    margin-bottom: 53px;
     display: flex;
     justify-content: start;
     margin-bottom: 159px;

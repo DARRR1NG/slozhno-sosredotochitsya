@@ -15,15 +15,10 @@
   --main-text-color: #353430;
   --main-text-color: #353430;
   --button-border-color: rgb(53, 52, 48, 0.4); 
-  /* сохраните этот селектор в приведённом виде.
-    Так стили написанные ниже будут иметь больший вес,
-    чем стили в медиазапросе предпочтений пользователя
-  */
 }
 
 .theme-light .page {
-  /* Вам также нужно будет написать ряд подобных селекторов */
-  .decorated-element  {
+  .decorated-element {
     display: none;
   }
 }
@@ -40,9 +35,8 @@
     --main-text-color: #353430;
     --main-text-color: #353430;
     --button-border-color: rgb(53, 52, 48, 0.4);
-    /* Дублируем переменные светлой темы */    
   }
-  .decorated-element  {
+  .decorated-element {
     display: none;
   }
 }
