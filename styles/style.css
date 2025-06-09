@@ -1,11 +1,15 @@
 /* Основные стили проекта. Это стили для темы, которую вы верстаете первой. */
 
 .page {
-  background-image: url("../images/cover-image-dark.png");
+  background-image: var(--background-photo);
   background-position: center;
   background-attachment: fixed;
   background-size: cover;
   /* сохраните в разметке и стилях класс page у тега body. Он удобен, чтобы составлять селекторы для разных цветовых тем. */
+}
+
+h2 {
+  color: var(--heading-color);
 }
 
 .header {
@@ -41,14 +45,14 @@ h3 {
   font-size: 18px;
   line-height: 18px;
   text-align: center;
-  color: var(--accent-color);
+  color: var(--button-color);
   background-color: transparent;
   text-transform: lowercase;
   border: transparent;
   padding: 1.7px 13px;
 }
 .header__theme-menu-button_active {
-  border: solid 1px var(--accent-color);
+  border: solid 1px var(--button-color);
 }
 
 .header__theme-menu-list {
@@ -65,8 +69,8 @@ h3 {
   content: "";
   width: 25px;
   height: 25px;
-  border-top: solid 1px var(--accent-color);
-  border-right: solid 1px var(--accent-color);
+  border-top: solid 1px var(--button-color);
+  border-right: solid 1px var(--button-color);
   top: 10px;
   right: 10px;
   position: absolute;
@@ -76,8 +80,8 @@ h3 {
   content: "";
   width: 25px;
   height: 25px;
-  border-bottom: solid 1px var(--accent-color);
-  border-left: solid 1px var(--accent-color);
+  border-bottom: solid 1px var(--button-color);
+  border-left: solid 1px var(--button-color);
   left: 10px;
   bottom: 10px;
   position: absolute;
@@ -176,8 +180,8 @@ footer::before {
   content: "";
   width: 25px;
   height: 25px;
-  border-top: solid 1px var(--accent-color);
-  border-right: solid 1px var(--accent-color);
+  border-top: solid 1px var(--button-color);
+  border-right: solid 1px var(--button-color);
   position: absolute;
   right: 10px;
   margin-top: 10px;
@@ -187,8 +191,8 @@ footer::after {
   content: "";
   width: 25px;
   height: 25px;
-  border-bottom: solid 1px var(--accent-color);
-  border-left: solid 1px var(--accent-color);
+  border-bottom: solid 1px var(--button-color);
+  border-left: solid 1px var(--button-color);
   position: absolute;
   left: 10px;
   bottom: 10px;
@@ -199,11 +203,10 @@ h2 {
   font-weight: 700;
   font-size: 18px;
   line-height: 23.4px;
-  color: var(--accent-color);
 }
 
 article {
-  color: var(--main-text);
+  color: var(--main-text-color);
   font-family: 'IBM Plex Mono', sans-serif;
   font-weight: 400;
   font-size: 18px;
@@ -258,25 +261,13 @@ h5 {
   }
 
   .header::after {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-top: solid 1px var(--accent-color);
-    border-right: solid 1px var(--accent-color);
     top: 20px;
     right: 20px;
-    position: absolute;
   }
 
   .header::before {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-bottom: solid 1px var(--accent-color);
-    border-left: solid 1px var(--accent-color);
     bottom: 20px;
     left: 20px;
-    position: absolute;
   }
 
   .decorated-element {
@@ -387,23 +378,11 @@ h5 {
   }
 
   footer::before {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-top: solid 1px var(--accent-color);
-    border-right: solid 1px var(--accent-color);
-    position: absolute;
     right: 20px;
     margin-top: 20px;
   }
 
   footer::after {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-bottom: solid 1px var(--accent-color);
-    border-left: solid 1px var(--accent-color);
-    position: absolute;
     left: 20px;
     bottom: 17px;
   }
@@ -422,25 +401,13 @@ h5 {
   }
 
   .header::after {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-top: solid 1px var(--accent-color);
-    border-right: solid 1px var(--accent-color);
     top: 20px;
     right: 20px;
-    position: absolute;
   }
 
   .header::before {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-bottom: solid 1px var(--accent-color);
-    border-left: solid 1px var(--accent-color);
     left: 20px;
     bottom: 68px;
-    position: absolute;
   }
 
   .header__theme-menu {
@@ -518,23 +485,11 @@ h5 {
   }
 
   footer::before {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-top: solid 1px var(--accent-color);
-    border-right: solid 1px var(--accent-color);
-    position: absolute;
     right: 20px;
     top: 2px;
   }
 
   footer::after {
-    content: "";
-    width: 25px;
-    height: 25px;
-    border-bottom: solid 1px var(--accent-color);
-    border-left: solid 1px var(--accent-color);
-    position: absolute;
     left: 20px;
     bottom: 18px;
   }
