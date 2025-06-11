@@ -481,3 +481,7 @@ button:focus-visible {
   outline: none;
   border: solid 1px var(--main-text-color);
 }
+
+.link-text {
+  text-decoration: none;
+}
