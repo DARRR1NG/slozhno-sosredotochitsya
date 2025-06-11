@@ -228,6 +228,7 @@ h4 {
 
 .link-text {
   text-shadow: 2px 2px 0 var(--accent-color);
+  text-decoration: none;
 }
 
 @media (min-width: 768px) {
@@ -480,8 +481,4 @@ button:focus-visible {
 .link-text:focus-visible {
   outline: none;
   border: solid 1px var(--main-text-color);
-}
-
-.link-text {
-  text-decoration: none;
 }
