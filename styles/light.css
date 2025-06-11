@@ -15,6 +15,7 @@
   --main-text-color: #353430;
   --main-text-color: #353430;
   --button-border-color: rgb(53, 52, 48, 0.4);
+  --background-photo-color: #fff1f7;
 }
 
 .theme-light .page {
@@ -35,7 +36,9 @@
     --main-text-color: #353430;
     --main-text-color: #353430;
     --button-border-color: rgb(53, 52, 48, 0.4);
+    --background-photo-color: #fff1f7;
   }
+  
   .decorated-element {
     display: none;
   }
