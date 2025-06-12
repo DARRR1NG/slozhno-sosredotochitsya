@@ -194,6 +194,8 @@ footer {
   display: flex;
   justify-content: center;
   position: relative;
+  height: 100vh;
+  min-height: 668px;
 }
 
 h2 {
@@ -475,7 +477,7 @@ h4 {
 
 button:focus-visible {
   outline: none;
-  border-bottom: solid 1px var(--button-border-color);
+  border-bottom: solid 1px currentColor;
 }
 
 .link-text:focus-visible {
